@@ -24,6 +24,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
+            $table->text('path');
             $table->foreignId('ornament_id')->references('id')->on('ornaments');
         });
     }
