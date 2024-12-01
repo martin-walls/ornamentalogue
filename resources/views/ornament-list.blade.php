@@ -8,7 +8,11 @@
 </head>
 
 <body>
-    Hello world
+    <ul>
+        @foreach ($ornaments as $ornament)
+            <li>{{ $ornament->name }}</li>
+        @endforeach
+    </ul>
 </body>
 
 </html>
