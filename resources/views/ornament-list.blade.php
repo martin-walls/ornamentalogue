@@ -10,7 +10,11 @@
 <body>
     <ul>
         @foreach ($ornaments as $ornament)
-            <li>{{ $ornament->name }}</li>
+            <li>
+                <a href="/ornament/{{ $ornament->id }}">
+                    {{ $ornament->name }}
+                </a>
+            </li>
         @endforeach
     </ul>
 </body>

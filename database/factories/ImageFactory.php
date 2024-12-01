@@ -17,10 +17,10 @@ class ImageFactory extends Factory
     public function definition(): array
     {
         // get a placeholder image and store it
-        $path = fake()->image('storage/app/public/images');
+        $path = fake()->image('storage/app/images', fullPath: false);
 
         return [
-            'path' => $path
+            'path' => '/images/' . $path
         ];
     }
 }
