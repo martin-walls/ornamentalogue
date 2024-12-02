@@ -10,7 +10,7 @@
 <body>
     <a href="/">Back to the tree</a>
 
-    <h1>{{ $ornament->name }}</h1>
+    <h1>{{ $ornament->occasion }}</h1>
 
     @foreach ($ornament->images as $image)
         <img src="{{ $image->path }}">

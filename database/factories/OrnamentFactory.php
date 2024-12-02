@@ -17,7 +17,7 @@ class OrnamentFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->words(2, true),
+            'occasion' => fake()->words(2, true),
             'date' => fake()->date(),
             'story' => fake()->paragraph(),
         ];

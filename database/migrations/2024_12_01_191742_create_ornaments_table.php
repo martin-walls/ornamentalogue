@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->text('name');
+            $table->text('occasion');
             $table->date('date');
             $table->text('story');
         });
