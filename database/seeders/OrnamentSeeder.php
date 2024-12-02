@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Ornament;
+use App\Models\Tree;
 use Illuminate\Database\Seeder;
 
 class OrnamentSeeder extends Seeder
@@ -12,9 +13,12 @@ class OrnamentSeeder extends Seeder
      */
     public function run(): void
     {
-        Ornament::factory()
-            ->count(10)
-            ->hasImages(2)
+        Tree::factory()
+            ->has(
+                Ornament::factory()
+                    ->count(10)
+                    ->hasImages(2)
+            )
             ->create();
     }
 }

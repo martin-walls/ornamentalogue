@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <h1>{{ $tree->name }}</h1>
+
     <ul>
         @foreach ($ornaments as $ornament)
             <li>
